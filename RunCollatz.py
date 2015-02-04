@@ -12,13 +12,16 @@
 
 import sys
 
-from Collatz import collatz_solve
+from Collatz import collatz_solve, collatz_test_gen
 
 # ----
 # main
 # ----
 
 if __name__ == "__main__" :
+    if len(sys.argv) == 2:
+        collatz_test_gen(str(sys.argv[1]))
+
     collatz_solve(sys.stdin, sys.stdout)
 
 """

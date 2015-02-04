@@ -7,6 +7,12 @@
 # ---------------------------
 
 # ------------
+# import
+# ------------
+
+from random import randrange
+
+# ------------
 # collatz_read
 # ------------
 
@@ -77,3 +83,21 @@ def collatz_solve (r, w) :
         i, j = collatz_read(s)
         v    = collatz_eval(i, j)
         collatz_print(w, i, j, v)
+
+
+def collatz_test_gen(filename):
+    """
+    Generates test cases for the collatz program
+
+    @param filename: a file to write acceptance test cases to
+    """
+    i = 1
+    j = 1000000
+
+    f = open(filename, 'w')
+    for _ in range(100):
+        x = randrange(i, j)
+        y = randrange(i, j)
+        f.write(str(x) + ' ' + str(y) + '\n')
+
+    f.close()
