@@ -116,7 +116,7 @@ class TestCollatz (TestCase) :
         collatz_solve(r, w)
 
     def test_solve_2 (self) :
-        r = StringIO("0 1\n-1 2\n2 3\n3 4\n")
+        r = StringIO("1 1\n1 2\n100 200\n300 400\n")
         w = StringIO()
         collatz_solve(r, w)
 
