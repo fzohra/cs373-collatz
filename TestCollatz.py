@@ -36,7 +36,6 @@ class TestCollatz (TestCase) :
         self.assertEqual(i, 1)
         self.assertEqual(j, 1)
 
-    #TODO: Should we only expect invalid input. Soft fail invalid inputs (out of range integers) maybe?
     def test_read_2 (self) :
         s    = "1 -10\n"
         i, j = collatz_read(s)

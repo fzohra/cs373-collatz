@@ -85,12 +85,12 @@ def collatz_solve (r, w) :
         collatz_print(w, i, j, v)
 
 
+"""
 def collatz_test_gen(filename):
-    """
-    Generates test cases for the collatz program
+    #Generates test cases for the collatz program
 
-    @param filename: a file to write acceptance test cases to
-    """
+    #@param filename: a file to write acceptance test cases to
+
     i = 1
     j = 1000000
 
@@ -101,3 +101,4 @@ def collatz_test_gen(filename):
         f.write(str(x) + ' ' + str(y) + '\n')
 
     f.close()
+"""
