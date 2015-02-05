@@ -1,0 +1,83 @@
+commit b189048080146c5ccad93cace4d87b64d5cad755
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Thu Feb 5 16:38:07 2015 -0600
+
+    updated Collatz.py to contain the same implementation of collatz_eval as SphereCollatz.py.
+
+commit 76eb893233bae1f3033f1cbea90df0b82e596dde
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Thu Feb 5 16:31:00 2015 -0600
+
+    can't seem to optimize further so just going to leave as is
+
+commit 6837baea255f352c8205c1ee4a1478ee031c8687
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Thu Feb 5 15:37:11 2015 -0600
+
+    Implemented lazy caching with a metacache based on frequently visited values. However, this increased the speed.
+
+commit d375452248c8821ea9a5795ef28ab0f37d9ca43e
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Thu Feb 5 15:20:37 2015 -0600
+
+    Implemented a simple lazy cache
+
+commit 653561faa0b7a64ada00159df7758b05da9ee9b6
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Wed Feb 4 23:04:47 2015 -0600
+
+    Commiting before pushing to test repo
+
+commit d959329e99db8d287716bf806660316be483a7a4
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Wed Feb 4 18:45:26 2015 -0600
+
+    Addded 100 acceptance test cases to RunCollatz.in. Output is in RunCollatz.out
+
+commit d5afbd2c4a05a18f283f06c8f5da15bd61d3e8b1
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Wed Feb 4 14:07:03 2015 -0600
+
+    Created function collatz_test_gen() in order to generate test cases within the valid input range
+
+commit 630e0780f036790e735ba5d8c0e00f03563c32eb
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Wed Feb 4 00:51:29 2015 -0600
+
+    Combined Collatz.py and RunCollatz.py into SphereCollatz.py to make submission to Sphere Online Judge
+
+commit 9a92d04358383bbeb08e9d679814ef9c6ec49ad4
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Wed Feb 4 00:32:21 2015 -0600
+
+    implemented a naive solution for collatz_eval(). Need to optimize.
+
+commit 1c1ef1cca5483022e137796a9266c588cc753d2a
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Tue Feb 3 22:57:02 2015 -0600
+
+    Added additional test cases for collatz_eval(), collatz_read(), collatz_print(), collatz_solve() in TextCollatz.py in order to better define the expected behavior of the collatz program
+
+commit 0b66eff779dc03997278448aeb770c2c519e67b1
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Tue Feb 3 21:42:55 2015 -0600
+
+    Fixed basic unit tests so the assertions are now failing. Need to write the Collatz core program now.
+
+commit acb82d9de7a0ec75fab70abbea249e210365e973
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Tue Feb 3 21:34:21 2015 -0600
+
+    Original project files
+
+commit 53e6fd5bdc32a038e6009cc6dd5e1006a5fe18eb
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Tue Feb 3 21:30:07 2015 -0600
+
+    Added project files Collatz.py RunCollatz.py TestCollatz.py RunCollatz.in RunCollatz.out
+
+commit d7bd08c5f321057a3c3d2ee791e6eaeab5f47ddd
+Author: Fatimah Zohra <fzohra92@utexas.edu>
+Date:   Mon Feb 2 23:10:28 2015 -0600
+
+    Initial commit
