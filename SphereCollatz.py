@@ -42,18 +42,28 @@ def collatz_eval (i, j) :
         i = j
         j = temp
 
+    # simple lazy cache
+    cache = {}
+
     m = 1  #initialize a max variable
 
     for n in range(i, j+1):
         c = 1 #initialize a count variable
+        orig = n
         while n != 1:
-            if n % 2 == 0:
-                n = n/2
+            if n in cache:
+                c = cache[n] + c - 1
+                n = 1
             else:
-                n = 3*n +1
-            c += 1
+                if n % 2 == 0:
+                    n = n / 2
+                else:
+                    n = 3 * n + 1
+                c += 1
+        cache[orig] = c
         m = max(c, m)
     return m
+
 
 # -------------
 # collatz_print
