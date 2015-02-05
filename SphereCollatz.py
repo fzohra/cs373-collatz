@@ -244,19 +244,12 @@ def collatz_eval (i, j) :
              985945: 184, 986498: 78, 991604: 153,
              996452: 215, 998183: 228, 287590: 97, 763256: 119, 680293: 62, }
 
-    freq = {}
-
     m = 1  #initialize a max variable
 
     for n in range(i, j+1):
         c = 1 #initialize a count variable
         orig = n
         while n != 1:
-            if n in freq:
-                freq[n] = freq[n] + 1
-            else:
-                freq[n] = 1
-
             if n in cache:
                 c = cache[n] + c - 1
                 n = 1
@@ -269,18 +262,6 @@ def collatz_eval (i, j) :
         cache[orig] = c
         m = max(c, m)
 
-    import sys
-    # sys.stdout.write('{ ')
-    p0 = 0
-    for key in freq:
-        if (freq[key] > 20):
-            if int(key) in cache:
-                p0 = p0 + 1
-                #sys.stdout.write(str(int(key)) + ': ' + str(cache[int(key)]) + ', ')
-                if p0 == 11:
-                    #sys.stdout.write('\n')
-                    p0 = 0
-    #sys.stdout.write('}')
     return m
 
 # -------------
